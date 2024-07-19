@@ -14,7 +14,7 @@ langchain-openai = "^0.1.16"
 langchain-community = "^0.2.7"
 langchain-chroma = "^0.1.2"
 llama-index = "^0.10.55"
-r2r = "^0.2.60"
+r2r = "^0.2.62"
 
 
 [tool.poetry.group.dev.dependencies]

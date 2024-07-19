@@ -1,10 +1,20 @@
+"""
+Benchmarking script for individual file processing. Seeks to mimic everyday use cases,
+we measured the ingestion times for single txt and PDF documents, both individually
+and in multi-file batches. This provides insight into the user experience when adding
+files to the system.
+
+Example usage:
+    python rag_performance/file_processing_benchmark.py --provider r2r
+"""
+
 import argparse
 import os
 import time
 from pathlib import Path
 
 
-class RAGBenchmark:
+class FileProcessingBenchmark:
     def __init__(self):
         self.file_paths = [
             "rag_performance/data/shakespearecompleteworks.txt",
@@ -207,7 +217,7 @@ def main():
     )
     args = parser.parse_args()
 
-    benchmark = RAGBenchmark()
+    benchmark = FileProcessingBenchmark()
     benchmark.run_benchmark(args.provider)
 
 
