@@ -41,7 +41,7 @@ We measured three key metrics for each file:
 
 Additionally, we tested combined ingestion of identical file types to assess each solution's performance with multi-file uploads.
 
-Table 2: Time taken to Ingest Files
+###Table 2: Time taken to Ingest Files
 | Metric | Shakespeare | Churchill | Combined txt | University Physics | Introductory Statistics | Combined PDF |
 |---|---|---|---|---|---|---|
 | [**R2R**](https://github.com/SciPhi-AI/R2R) | 7.04 | 9.07 | 9.58 | 8.57 | 14.6 | 20.7 |
@@ -50,7 +50,7 @@ Table 2: Time taken to Ingest Files
 | [**LangChain**](https://github.com/langchain-ai/langchain) | 65.2 | 64.7 | 134 | 9.31 | 24.7 | 35.2 |
 | [**RagFlow**](https://github.com/infiniflow/ragflow) | 1630 | 3800 | | | | |
 
-Table 3: Megabytes per Second Throughput
+### Table 3: Megabytes per Second Throughput
 | Metric | Shakespeare | Churchill | Combined txt | University Physics | Introductory Statistics | Combined PDF |
 |---|---|---|---|---|---|---|
 | [**R2R**](https://github.com/SciPhi-AI/R2R) | 0.767 | 0.628 | 1.159 | 3.127 | 1.833 | 2.593 |
