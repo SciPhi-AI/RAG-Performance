@@ -17,11 +17,15 @@ with ingesting articles as per their recommended practices, allowing us to measu
 ### Table 1: Ingestion Time over 10008026 Tokens
 | Solution | Time Elapsed (s) |
 |-----------|--------------|
-| R2R | 62.97 |
+| [R2R](https://github.com/SciPhi-AI/R2R) | 62.97 |
 | LlamaIndex (Async) | 81.54 |
-| LlamaIndex | 171.93 |
-| Haystack | 276.27 |
-| LangChain | 510.04 |
+| [LlamaIndex](https://github.com/run-llama/llama_index) | 171.93 |
+| [Haystack](https://github.com/deepset-ai/haystack) | 276.27 |
+| [LangChain](https://github.com/langchain-ai/langchain) | 510.04 |
+
+### Figure 1: Tokens Ingested vs. Time
+
+The steeper the better, as the rate indicates faster ingestion
 
 <img src="./assets/ingestionchart.png" alt="Benchmarks as of 7/15/2024">
 
@@ -40,20 +44,20 @@ Additionally, we tested combined ingestion of identical file types to assess eac
 Table 2: Time taken to Ingest Files
 | Metric | Shakespeare | Churchill | Combined txt | University Physics | Introductory Statistics | Combined PDF |
 |---|---|---|---|---|---|---|
-| **R2R** | 7.04 | 9.07 | 9.58 | 8.57 | 14.6 | 20.7 |
-| **LlamaIndex** | 67.0 | 57.7 | 189 | 7.92 | 18.0 | 25.3 |
-| **Haystack** | 18.8 | 16.8 | 37.8 | 8.17 | 17.0 | 24.9 |
-| **Langchain** | 65.2 | 64.7 | 134 | 9.31 | 24.7 | 35.2 |
-| **RagFlow** | 1630 | 3800 | | | | |
+| [**R2R**](https://github.com/SciPhi-AI/R2R) | 7.04 | 9.07 | 9.58 | 8.57 | 14.6 | 20.7 |
+| [**LlamaIndex**](https://github.com/run-llama/llama_index) | 67.0 | 57.7 | 189 | 7.92 | 18.0 | 25.3 |
+| [**Haystack**](https://github.com/deepset-ai/haystack) | 18.8 | 16.8 | 37.8 | 8.17 | 17.0 | 24.9 |
+| [**LangChain**](https://github.com/langchain-ai/langchain) | 65.2 | 64.7 | 134 | 9.31 | 24.7 | 35.2 |
+| [**RagFlow**](https://github.com/infiniflow/ragflow) | 1630 | 3800 | | | | |
 
 Table 3: Megabytes per Second Throughput
 | Metric | Shakespeare | Churchill | Combined txt | University Physics | Introductory Statistics | Combined PDF |
 |---|---|---|---|---|---|---|
-| **R2R** | 0.767 | 0.628 | 1.159 | 3.127 | 1.833 | 2.593 |
-| **LlamaIndex** | 0.081 | 0.099 | 0.056 | 3.384 | 1.490 | 2.121 |
-| **Haystack** | 0.288 | 0.338 | 1.416 | 3.280 | 1.573 | 2.156 |
-| **Langchain** | 0.083 | 0.088 | 0.082 | 2.879 | 1.086 | 1.523 |
-| **RagFlow** | 0.003 | 0.001 | | | | |
+| [**R2R**](https://github.com/SciPhi-AI/R2R) | 0.767 | 0.628 | 1.159 | 3.127 | 1.833 | 2.593 |
+| [**LlamaIndex**](https://github.com/run-llama/llama_index) | 0.081 | 0.099 | 0.056 | 3.384 | 1.490 | 2.121 |
+| [**Haystack**](https://github.com/deepset-ai/haystack) | 0.288 | 0.338 | 1.416 | 3.280 | 1.573 | 2.156 |
+| [**LangChain**](https://github.com/langchain-ai/langchain) | 0.083 | 0.088 | 0.082 | 2.879 | 1.086 | 1.523 |
+| [**RagFlow**](https://github.com/infiniflow/ragflow) | 0.003 | 0.001 | | | | |
 
 ## Reproducing
 We encourage you to reproduce the benchmarks that we report. Instructions to run benchmarking scripts are located in the source code for each benchmark.
