@@ -41,7 +41,7 @@ We measured three key metrics for each file:
 
 Additionally, we tested combined ingestion of identical file types to assess each solution's performance with multi-file uploads.
 
-###Table 2: Time taken to Ingest Files
+### Table 2: Time taken to Ingest Files
 | Metric | Shakespeare | Churchill | Combined txt | University Physics | Introductory Statistics | Combined PDF |
 |---|---|---|---|---|---|---|
 | [**R2R**](https://github.com/SciPhi-AI/R2R) | 7.04 | 9.07 | 9.58 | 8.57 | 14.6 | 20.7 |
